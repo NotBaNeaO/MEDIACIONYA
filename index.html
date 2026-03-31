@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediación ya - El primer paso obligatorio antes de demandar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B2C9AB', // Verde pastel
+                        secondary: '#F5F5DC', // Beige
+                        accent: '#7A9473',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-color: #F5F5DC;
+            background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight text-gray-900">Mediación<span class="text-primary">ya</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#inicio" class="hover:text-primary transition">Inicio</a>
+                    <a href="#servicios" class="hover:text-primary transition">Servicios</a>
+                    <a href="#proceso" class="hover:text-primary transition">Proceso</a>
+                    <a href="#contacto" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-accent transition">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="pt-32 pb-20 hero-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                    El primer paso <span class="text-primary">obligatorio</span> antes de demandar.
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 border-l-4 border-primary pl-4">
+                    Facilitamos la resolución de conflictos entregando actas de acuerdos resueltos o frustrados, documento esencial para iniciar cualquier proceso judicial.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#contacto" class="bg-primary text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-accent transition transform hover:-translate-y-1">
+                        Solicitar Mediación
+                    </a>
+                    <a href="#servicios" class="bg-white border-2 border-primary text-primary px-8 py-4 rounded-lg font-bold hover:bg-primary hover:text-white transition">
+                        Saber más
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-72 h-72 bg-primary/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+                    <div class="absolute -bottom-4 -right-4 w-72 h-72 bg-secondary/50 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                    <div class="relative bg-white p-8 rounded-2xl shadow-2xl border border-gray-100">
+                        <i class="fas fa-balance-scale text-primary text-8xl mb-4"></i>
+                        <h3 class="text-xl font-bold">Equilibrio & Soluciones</h3>
+                        <p class="text-gray-500 italic">Gestión profesional de acuerdos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Propósito de Mediación Ya</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-secondary/30 rounded-2xl border border-gray-100 hover:shadow-xl transition">
+                    <i class="fas fa-file-signature text-3xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Actas Certificadas</h3>
+                    <p class="text-gray-600">Entrega inmediata de actas de acuerdos resueltos o documentos de mediación frustrada.</p>
+                </div>
+                <div class="p-8 bg-secondary/30 rounded-2xl border border-gray-100 hover:shadow-xl transition">
+                    <i class="fas fa-gavel text-3xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Requisito Legal</h3>
+                    <p class="text-gray-600">Cumplimos con el trámite obligatorio exigido por los tribunales antes de cualquier demanda.</p>
+                </div>
+                <div class="p-8 bg-secondary/30 rounded-2xl border border-gray-100 hover:shadow-xl transition">
+                    <i class="fas fa-handshake text-3xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Solución de Conflictos</h3>
+                    <p class="text-gray-600">Buscamos el equilibrio y la mejor salida para ambas partes antes de llegar a juicio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary py-16">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">¿Necesitas demandar? Primero obtén tu acta de mediación.</h2>
+            <p class="text-white/90 text-xl mb-8">Evita retrasos legales y gestiona tu certificado hoy mismo.</p>
+            <a href="mailto:mediadora.jessicaherrera@gmail.com" class="inline-block bg-white text-primary px-10 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition">
+                Contactar a Jessica Herrera
+            </a>
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-gray-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12">
+            <div>
+                <div class="flex items-center gap-2 mb-6">
+                    <i class="fas fa-balance-scale text-primary text-2xl"></i>
+                    <span class="text-2xl font-bold">Mediación<span class="text-primary">ya</span></span>
+                </div>
+                <p class="text-gray-400">
+                    Especialistas en la gestión de conflictos y entrega de documentos legales necesarios para el sistema judicial.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6">Contacto Directo</h4>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-envelope text-primary"></i>
+                        <a href="mailto:mediadora.jessicaherrera@gmail.com" class="hover:text-primary transition">mediadora.jessicaherrera@gmail.com</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-user-tie text-primary"></i>
+                        <span>Jessica Herrera - Mediadora</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6">Horario de Atención</h4>
+                <p class="text-gray-400">Lunes a Viernes: 09:00 - 18:00 hrs</p>
+                <div class="mt-6 flex gap-4">
+                    <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition cursor-pointer">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+            &copy; 2026 Mediación Ya. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
