@@ -222,12 +222,13 @@
 
             <!-- Logo -->
             <a href="#top" aria-label="Ir al inicio de Mediación Ya" class="flex items-center gap-3 hover:opacity-80 transition">
-                <img src="./logo.png" alt="Logo Mediación Ya" class="h-14 w-auto object-contain" width="112" height="56">
+                <img src="./logo.png" alt="Logo Mediación Ya" class="h-16 w-auto object-contain" width="140" height="64">
             </a>
 
             <!-- Links desktop -->
-            <div class="hidden md:flex space-x-8 font-medium items-center text-accent">
+            <div class="hidden md:flex space-x-6 font-medium items-center text-accent text-sm">
                 <a href="#servicios"   class="hover:text-primary transition">Servicios</a>
+                <a href="#materias"    class="hover:text-primary transition">Materias</a>
                 <a href="#informacion" class="hover:text-primary transition">Información</a>
                 <a href="#proceso"     class="hover:text-primary transition">Proceso</a>
                 <a href="#precios"     class="hover:text-primary transition">Tarifas</a>
@@ -249,6 +250,7 @@
     <div id="mobile-menu" class="md:hidden bg-background border-t border-primary/10" role="menu" aria-label="Menú móvil">
         <div class="flex flex-col px-6 py-4 space-y-4 font-medium text-accent text-lg">
             <a href="#servicios"   role="menuitem" class="hover:text-primary transition py-1 border-b border-light/30">Servicios</a>
+            <a href="#materias"    role="menuitem" class="hover:text-primary transition py-1 border-b border-light/30">Materias que se median</a>
             <a href="#informacion" role="menuitem" class="hover:text-primary transition py-1 border-b border-light/30">Información</a>
             <a href="#proceso"     role="menuitem" class="hover:text-primary transition py-1 border-b border-light/30">Proceso</a>
             <a href="#precios"     role="menuitem" class="hover:text-primary transition py-1 border-b border-light/30">Tarifas</a>
@@ -288,7 +290,26 @@
         </div>
 
         <div class="md:w-1/2 flex justify-center items-center h-full relative">
-            <img src="./logo.png" alt="Equilibrio y soluciones en mediación" class="relative z-10 w-80 h-80 object-contain drop-shadow-2xl" width="320" height="320">
+            <!-- Foto profesional de la mediadora -->
+            <div class="relative z-10 flex flex-col items-center">
+                <div class="relative">
+                    <!-- Marco decorativo -->
+                    <div class="absolute -inset-2 bg-gradient-to-br from-primary to-light rounded-full opacity-30 blur-md"></div>
+                    <img
+                        src="./mediadorajessica.jpg"
+                        alt="Jessica Herrera, Mediadora Familiar y Social certificada en Chile"
+                        class="relative w-72 h-72 md:w-80 md:h-80 object-cover object-top rounded-full border-4 border-white shadow-2xl drop-shadow-2xl"
+                        width="320" height="320"
+                        onerror="this.src='./logo.png'; this.style='object-fit:contain; padding:20px;'"
+                    >
+                </div>
+                <!-- Tarjeta de presentación bajo la foto -->
+                <div class="mt-6 bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl px-8 py-4 text-center border border-light/40">
+                    <p class="text-xl font-extrabold text-accent">Jessica Herrera</p>
+                    <p class="text-primary font-semibold text-sm mt-1">Mediadora Certificada</p>
+                    <p class="text-gray-500 text-xs mt-1">Registro Nacional de Mediadores · Chile</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -340,6 +361,107 @@
             </article>
 
         </div>
+    </div>
+</section>
+
+
+<!-- ================================================================
+     MATERIAS QUE SE PUEDEN MEDIAR
+================================================================ -->
+<section id="materias" class="py-24 bg-background relative overflow-hidden" aria-labelledby="titulo-materias">
+    <div class="max-w-5xl mx-auto px-4 w-full relative z-10">
+
+        <div class="text-center mb-14 reveal">
+            <h2 id="titulo-materias" class="text-4xl font-bold text-accent mb-4">Materias que se pueden mediar</h2>
+            <p class="text-gray-600 text-xl max-w-2xl mx-auto">La mediación familiar es el <strong>primer acto obligatorio</strong> antes de iniciar cualquier demanda en estas materias.</p>
+            <div class="w-24 h-1 bg-primary mx-auto rounded-full mt-6"></div>
+        </div>
+
+        <!-- Aviso legal destacado -->
+        <div class="bg-primary/10 border-l-4 border-primary rounded-r-2xl p-6 mb-12 reveal">
+            <p class="text-accent font-semibold text-lg flex items-start gap-3">
+                <i class="fas fa-gavel text-primary mt-1 flex-shrink-0" aria-hidden="true"></i>
+                <span>Según la <strong>Ley N°19.968 de Tribunales de Familia</strong>, antes de presentar una demanda en estas materias, la ley exige haber pasado por un proceso de mediación. Sin el acta correspondiente (de acuerdo o frustrada), el tribunal no admite la demanda.</span>
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- Mediación Familiar Obligatoria -->
+            <div class="bg-white rounded-2xl shadow-md border border-light/30 p-8 reveal">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                        <i class="fas fa-home text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-accent">Mediación Familiar <span class="text-primary text-sm font-semibold">(Obligatoria)</span></h3>
+                </div>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0" aria-hidden="true"></i>
+                        <div>
+                            <span class="font-semibold text-accent">Pensión de Alimentos</span>
+                            <p class="text-sm text-gray-500">Fijación, aumento, rebaja o cese de la obligación alimenticia para hijos menores o mayores con necesidades.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0" aria-hidden="true"></i>
+                        <div>
+                            <span class="font-semibold text-accent">Relación Directa y Regular (Visitas)</span>
+                            <p class="text-sm text-gray-500">Régimen de visitas y comunicación entre padres e hijos cuando los progenitores no conviven.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0" aria-hidden="true"></i>
+                        <div>
+                            <span class="font-semibold text-accent">Cuidado Personal de Hijos</span>
+                            <p class="text-sm text-gray-500">Tuición o custodia de niños, niñas y adolescentes, siempre considerando su interés superior.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Otras materias -->
+            <div class="bg-white rounded-2xl shadow-md border border-light/30 p-8 reveal" style="transition-delay:100ms">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                        <i class="fas fa-users text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-accent">Mediación Social, Vecinal y Comunitaria</h3>
+                </div>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-mid mt-1 flex-shrink-0" aria-hidden="true"></i>
+                        <div>
+                            <span class="font-semibold text-accent">Conflictos vecinales</span>
+                            <p class="text-sm text-gray-500">Ruidos molestos, mascotas, límites entre propiedades, estacionamiento y convivencia en general.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-mid mt-1 flex-shrink-0" aria-hidden="true"></i>
+                        <div>
+                            <span class="font-semibold text-accent">Conflictos entre personas</span>
+                            <p class="text-sm text-gray-500">Disputas interpersonales, deudas entre conocidos, problemas en el trabajo o en la comunidad.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-mid mt-1 flex-shrink-0" aria-hidden="true"></i>
+                        <div>
+                            <span class="font-semibold text-accent">Organizaciones y comunidades</span>
+                            <p class="text-sm text-gray-500">Juntas de vecinos, comités de vivienda, organizaciones comunitarias y conflictos internos de grupos.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Nota exclusión VIF -->
+        <div class="mt-8 bg-red-50 border border-red-100 rounded-2xl p-5 reveal">
+            <p class="text-red-800 text-sm flex items-start gap-3">
+                <i class="fas fa-exclamation-triangle text-red-600 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                <span><strong>Importante:</strong> No procede mediación cuando existe <strong>violencia intrafamiliar (VIF)</strong> vigente o cuando hay medidas cautelares activas entre las partes. En ese caso, el mediador emite de inmediato el acta de mediación frustrada para que puedas iniciar la vía judicial.</span>
+            </p>
+        </div>
+
     </div>
 </section>
 
@@ -444,11 +566,40 @@
 <section id="proceso" class="py-24 bg-white relative overflow-hidden" aria-labelledby="titulo-proceso">
     <div class="max-w-7xl mx-auto px-4 w-full relative z-10">
 
-        <div class="text-center mb-20 reveal">
+        <div class="text-center mb-16 reveal">
             <h2 id="titulo-proceso" class="text-4xl font-bold text-accent mb-4">¿Cómo Funciona?</h2>
-            <p class="text-xl text-gray-600">Obtén tu acta en 3 simples pasos</p>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">La mediación es el <strong class="text-primary">primer acto jurídico obligatorio</strong> antes de presentar cualquier demanda en materias de familia. Sin este paso, el Tribunal de Familia no puede tramitar tu causa.</p>
             <div class="w-24 h-1 bg-primary mx-auto rounded-full mt-6"></div>
         </div>
+
+        <!-- Explicación del primer acto jurídico -->
+        <div class="bg-accent/5 border border-accent/20 rounded-2xl p-8 mb-16 reveal">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="flex flex-col items-center">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md mb-3" aria-hidden="true">
+                        <i class="fas fa-balance-scale text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-accent mb-2">Requisito legal</h4>
+                    <p class="text-gray-600 text-sm">La Ley N°19.968 exige mediación previa para iniciar demandas de familia ante los tribunales.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md mb-3" aria-hidden="true">
+                        <i class="fas fa-file-signature text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-accent mb-2">El acta que necesitas</h4>
+                    <p class="text-gray-600 text-sm">Al finalizar, recibes un acta de acuerdo o de mediación frustrada. Ambas habilitan el paso siguiente.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md mb-3" aria-hidden="true">
+                        <i class="fas fa-shield-alt text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-accent mb-2">Validez legal plena</h4>
+                    <p class="text-gray-600 text-sm">Un acuerdo logrado en mediación tiene la misma validez que una sentencia judicial firme.</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center text-xl text-gray-600 font-medium mb-14 reveal">Obtén tu acta en <span class="text-primary font-bold">3 simples pasos</span></p>
 
         <ol class="grid md:grid-cols-3 gap-12 relative list-none">
             <div class="hidden md:block absolute top-10 left-[16%] right-[16%] h-1 bg-gradient-to-r from-light via-primary to-light z-0" aria-hidden="true"></div>
@@ -714,6 +865,7 @@
             <nav aria-label="Mapa del sitio">
                 <ul class="space-y-2 text-light text-base">
                     <li><a href="#servicios"   class="hover:text-white transition">→ Servicios</a></li>
+                    <li><a href="#materias"    class="hover:text-white transition">→ Materias que se median</a></li>
                     <li><a href="#informacion" class="hover:text-white transition">→ ¿Qué es la mediación?</a></li>
                     <li><a href="#proceso"     class="hover:text-white transition">→ Cómo funciona</a></li>
                     <li><a href="#precios"     class="hover:text-white transition">→ Tarifas</a></li>
