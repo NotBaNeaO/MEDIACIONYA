@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ============================================================
-         SEO PRIMARIO
-    ============================================================ -->
     <title>Mediación Ya | Mediación Familiar, Vecinal y Social en Chile</title>
     <meta name="description" content="Mediación familiar, vecinal y social en Chile. Obtén tu acta de mediación (acuerdo o frustrada) de forma rápida y legal. Presencial y online. Gratuita. El paso obligatorio antes de demandar.">
     <meta name="keywords" content="mediación familiar Chile, mediación vecinal, acta mediación frustrada, mediación previa a demanda, tribunales de familia, pensión alimentos mediación, mediación online Chile, mediadora Jessica Herrera">
@@ -15,9 +12,6 @@
     <meta name="theme-color" content="#C13364">
     <link rel="canonical" href="https://www.mediacionya.cl/">
 
-    <!-- ============================================================
-         OPEN GRAPH (Facebook, WhatsApp, LinkedIn)
-    ============================================================ -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_CL">
     <meta property="og:url" content="https://www.mediacionya.cl/">
@@ -29,17 +23,11 @@
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Mediación Ya - Mediación familiar y social en Chile">
 
-    <!-- ============================================================
-         TWITTER / X CARDS
-    ============================================================ -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mediación Ya | El primer paso obligatorio antes de demandar">
     <meta name="twitter:description" content="Mediación familiar, vecinal y social en Chile. Acta lista para tribunales. Online y presencial.">
     <meta name="twitter:image" content="https://www.mediacionya.cl/og-image.jpg">
 
-    <!-- ============================================================
-         SCHEMA.ORG — LocalBusiness + LegalService (Google Rich Results)
-    ============================================================ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -80,9 +68,6 @@
     }
     </script>
 
-    <!-- ============================================================
-         SCHEMA.ORG — FAQPage (ayuda a aparecer en Google con respuestas expandidas)
-    ============================================================ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -124,9 +109,6 @@
     }
     </script>
 
-    <!-- ============================================================
-         RECURSOS EXTERNOS
-    ============================================================ -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -158,11 +140,9 @@
             background-size: 20px 20px;
         }
 
-        /* Reveal on scroll */
         .reveal { opacity: 0; transform: translateY(30px); transition: all .8s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
 
-        /* WhatsApp tooltip */
         @keyframes tooltip-pulse {
             0%,50%  { opacity:0; transform:translateX(20px); }
             55%,95% { opacity:1; transform:translateX(0); }
@@ -170,7 +150,6 @@
         }
         .tooltip-auto { animation: tooltip-pulse 8s infinite; }
 
-        /* Menú móvil */
         #mobile-menu {
             max-height: 0;
             overflow: hidden;
@@ -178,22 +157,16 @@
         }
         #mobile-menu.open { max-height: 400px; }
 
-        /* Hamburger → X */
         #hamburger span { transition: all .3s ease; display:block; }
         #hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
         #hamburger.open span:nth-child(2) { opacity:0; transform: scaleX(0); }
         #hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
-        /* ============================================================
-           MERCADO PAGO — Espacios de pago (PENDIENTE DE ACTIVAR)
-           Para activar: reemplaza href="#" por el link de MP de cada servicio
-           y quita el atributo data-mp-disabled
-        ============================================================ */
         .btn-mp {
             display: inline-flex;
             align-items: center;
             gap: .5rem;
-            background: #009ee3;       /* Azul oficial Mercado Pago */
+            background: #009ee3;
             color: #fff;
             font-weight: 700;
             padding: .75rem 1.5rem;
@@ -208,21 +181,38 @@
             cursor: not-allowed;
             opacity: .7;
         }
+
+        /* Hero image rectangular */
+        .hero-photo {
+            width: 100%;
+            max-width: 380px;
+            height: 460px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 1.5rem;
+            border: 4px solid #fff;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+        }
+
+        @media (min-width: 768px) {
+            .hero-photo {
+                max-width: 420px;
+                height: 500px;
+            }
+        }
     </style>
 </head>
 
 <body id="top" class="font-sans text-gray-800">
 
-<!-- ================================================================
-     NAVEGACIÓN
-================================================================ -->
+<!-- NAVEGACIÓN -->
 <nav class="fixed w-full z-50 bg-background/95 backdrop-blur-md shadow-sm border-b border-primary/20" role="navigation" aria-label="Navegación principal">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
 
-            <!-- Logo -->
+            <!-- Logo — más grande -->
             <a href="#top" aria-label="Ir al inicio de Mediación Ya" class="flex items-center gap-3 hover:opacity-80 transition">
-                <img src="./logo.png" alt="Logo Mediación Ya" class="h-16 w-auto object-contain" width="140" height="64">
+                <img src="./logo.png" alt="Logo Mediación Ya" class="h-20 w-auto object-contain" width="220" height="80">
             </a>
 
             <!-- Links desktop -->
@@ -261,13 +251,13 @@
 </nav>
 
 
-<!-- ================================================================
-     HERO
-================================================================ -->
+<!-- HERO -->
 <section class="min-h-screen pt-20 flex items-center relative overflow-hidden bg-background" aria-label="Inicio">
     <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-light rounded-full filter blur-[100px] opacity-40" aria-hidden="true"></div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12 py-12 reveal relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12 py-16 reveal relative z-10">
+
+        <!-- Texto -->
         <div class="md:w-1/2 mb-10 md:mb-0">
             <img src="./slogan.png" alt="El primer paso obligatorio antes de demandar" class="h-10 w-auto mb-6 object-contain" width="320" height="40">
             <h1 class="text-4xl md:text-5xl font-extrabold text-accent leading-tight mb-6">
@@ -277,7 +267,6 @@
                 Facilitamos la resolución de conflictos entregando actas de acuerdos resueltos o frustrados, documento esencial para iniciar cualquier proceso judicial.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
-                <!-- CTA principal → reemplazar con link real del formulario -->
                 <a href="https://forms.gle/TU_ENLACE_AQUI" target="_blank" rel="noopener"
                    class="bg-primary text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-accent transition transform hover:-translate-y-1 text-center flex items-center justify-center gap-2">
                     <i class="fab fa-wpforms" aria-hidden="true"></i> Llenar Formulario
@@ -289,35 +278,36 @@
             </div>
         </div>
 
-        <div class="md:w-1/2 flex justify-center items-center h-full relative">
-            <!-- Foto profesional de la mediadora -->
-            <div class="relative z-10 flex flex-col items-center">
-                <div class="relative">
-                    <!-- Marco decorativo -->
-                    <div class="absolute -inset-2 bg-gradient-to-br from-primary to-light rounded-full opacity-30 blur-md"></div>
+        <!-- Imagen rectangular — persona completa visible -->
+        <div class="md:w-1/2 flex justify-center items-start">
+            <div class="flex flex-col items-center w-full">
+
+                <div class="relative w-full flex justify-center">
+                    <!-- Sombra decorativa detrás -->
+                    <div class="absolute -inset-3 bg-gradient-to-br from-primary/30 to-light/40 rounded-3xl blur-xl" aria-hidden="true"></div>
+
                     <img
                         src="./mediadorajessica.jpg"
                         alt="Jessica Herrera, Mediadora Familiar y Social certificada en Chile"
-                        class="relative w-72 h-72 md:w-80 md:h-80 object-cover object-top rounded-full border-4 border-white shadow-2xl drop-shadow-2xl"
-                        width="320" height="320"
-                        onerror="this.src='./logo.png'; this.style='object-fit:contain; padding:20px;'"
+                        class="hero-photo relative z-10"
+                        onerror="this.src='./logo.png'; this.style='object-fit:contain; padding:20px; height:200px;'"
                     >
                 </div>
+
                 <!-- Tarjeta de presentación bajo la foto -->
-                <div class="mt-6 bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl px-8 py-4 text-center border border-light/40">
+                <div class="mt-6 bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl px-8 py-4 text-center border border-light/40 w-full max-w-xs">
                     <p class="text-xl font-extrabold text-accent">Jessica Herrera</p>
                     <p class="text-primary font-semibold text-sm mt-1">Mediadora Certificada</p>
                     <p class="text-gray-500 text-xs mt-1">Registro Nacional de Mediadores · Chile</p>
                 </div>
+
             </div>
         </div>
     </div>
 </section>
 
 
-<!-- ================================================================
-     SERVICIOS
-================================================================ -->
+<!-- SERVICIOS -->
 <section id="servicios" class="py-24 bg-white relative overflow-hidden" aria-labelledby="titulo-servicios">
     <div class="max-w-7xl mx-auto px-4 w-full relative z-10">
 
@@ -365,9 +355,7 @@
 </section>
 
 
-<!-- ================================================================
-     MATERIAS QUE SE PUEDEN MEDIAR
-================================================================ -->
+<!-- MATERIAS -->
 <section id="materias" class="py-24 bg-background relative overflow-hidden" aria-labelledby="titulo-materias">
     <div class="max-w-5xl mx-auto px-4 w-full relative z-10">
 
@@ -377,7 +365,6 @@
             <div class="w-24 h-1 bg-primary mx-auto rounded-full mt-6"></div>
         </div>
 
-        <!-- Aviso legal destacado -->
         <div class="bg-primary/10 border-l-4 border-primary rounded-r-2xl p-6 mb-12 reveal">
             <p class="text-accent font-semibold text-lg flex items-start gap-3">
                 <i class="fas fa-gavel text-primary mt-1 flex-shrink-0" aria-hidden="true"></i>
@@ -387,7 +374,6 @@
 
         <div class="grid md:grid-cols-2 gap-8">
 
-            <!-- Mediación Familiar Obligatoria -->
             <div class="bg-white rounded-2xl shadow-md border border-light/30 p-8 reveal">
                 <div class="flex items-center gap-3 mb-6">
                     <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
@@ -420,7 +406,6 @@
                 </ul>
             </div>
 
-            <!-- Otras materias -->
             <div class="bg-white rounded-2xl shadow-md border border-light/30 p-8 reveal" style="transition-delay:100ms">
                 <div class="flex items-center gap-3 mb-6">
                     <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
@@ -454,7 +439,6 @@
             </div>
         </div>
 
-        <!-- Nota exclusión VIF -->
         <div class="mt-8 bg-red-50 border border-red-100 rounded-2xl p-5 reveal">
             <p class="text-red-800 text-sm flex items-start gap-3">
                 <i class="fas fa-exclamation-triangle text-red-600 mt-1 flex-shrink-0" aria-hidden="true"></i>
@@ -466,9 +450,7 @@
 </section>
 
 
-<!-- ================================================================
-     INFORMACIÓN — MEDIACIÓN FAMILIAR
-================================================================ -->
+<!-- INFORMACIÓN -->
 <section id="informacion" class="pt-24 bg-background relative overflow-hidden" aria-labelledby="titulo-informacion">
     <div class="max-w-5xl mx-auto px-4 w-full relative z-10">
         <div class="bg-white rounded-3xl shadow-xl overflow-hidden reveal">
@@ -524,9 +506,7 @@
 </section>
 
 
-<!-- ================================================================
-     DATO DESTACADO
-================================================================ -->
+<!-- DATO DESTACADO -->
 <section class="pb-24 pt-12 bg-background relative overflow-hidden" aria-label="Dato destacado sobre mediación">
     <div class="max-w-5xl mx-auto px-4 w-full relative z-10">
         <div class="bg-gradient-to-br from-accent to-primary rounded-3xl shadow-2xl p-10 md:p-14 text-white flex flex-col md:flex-row items-center justify-between gap-10 reveal border-4 border-white">
@@ -560,9 +540,7 @@
 </section>
 
 
-<!-- ================================================================
-     PROCESO — 3 PASOS
-================================================================ -->
+<!-- PROCESO -->
 <section id="proceso" class="py-24 bg-white relative overflow-hidden" aria-labelledby="titulo-proceso">
     <div class="max-w-7xl mx-auto px-4 w-full relative z-10">
 
@@ -572,7 +550,6 @@
             <div class="w-24 h-1 bg-primary mx-auto rounded-full mt-6"></div>
         </div>
 
-        <!-- Explicación del primer acto jurídico -->
         <div class="bg-accent/5 border border-accent/20 rounded-2xl p-8 mb-16 reveal">
             <div class="grid md:grid-cols-3 gap-8 text-center">
                 <div class="flex flex-col items-center">
@@ -626,15 +603,7 @@
 </section>
 
 
-<!-- ================================================================
-     TARIFAS / MERCADO PAGO
-     ⚠️  SECCIÓN PENDIENTE DE ACTIVAR
-     Para publicar un servicio:
-       1. Crea el link de pago en tu cuenta de Mercado Pago
-       2. Reemplaza href="#" por la URL generada
-       3. Quita el atributo data-mp-disabled del botón correspondiente
-       4. Actualiza el precio en el <span> de precio
-================================================================ -->
+<!-- TARIFAS -->
 <section id="precios" class="py-24 bg-background relative overflow-hidden" aria-labelledby="titulo-precios">
     <div class="max-w-5xl mx-auto px-4 w-full relative z-10">
 
@@ -646,7 +615,6 @@
 
         <div class="grid md:grid-cols-3 gap-8">
 
-            <!-- TARJETA 1: Mediación Familiar -->
             <article class="bg-white rounded-2xl shadow-md border border-light/30 p-8 flex flex-col items-center text-center reveal hover:shadow-xl transition-all">
                 <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-5" aria-hidden="true">
                     <i class="fas fa-home text-primary text-2xl"></i>
@@ -655,26 +623,22 @@
                 <p class="text-gray-500 text-sm mb-6">Pensión de alimentos, visitas y cuidado personal.</p>
                 <p class="text-3xl font-extrabold text-primary mb-1">Gratuita</p>
                 <p class="text-gray-400 text-xs mb-8">Financiada por el Estado de Chile</p>
-                <!-- BOTÓN MP: Gratuito → enlaza al formulario en vez de MP -->
                 <a href="https://forms.gle/TU_ENLACE_AQUI" target="_blank" rel="noopener"
                    class="btn-mp w-full justify-center" style="background:#C13364">
                     <i class="fas fa-file-alt" aria-hidden="true"></i> Solicitar ahora
                 </a>
             </article>
 
-            <!-- TARJETA 2: Mediación Vecinal / Social -->
             <article class="bg-white rounded-2xl shadow-md border border-light/30 p-8 flex flex-col items-center text-center reveal hover:shadow-xl transition-all" style="transition-delay:100ms">
                 <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-5" aria-hidden="true">
                     <i class="fas fa-street-view text-primary text-2xl"></i>
                 </div>
                 <h3 class="text-xl font-bold text-accent mb-2">Mediación Vecinal / Social</h3>
                 <p class="text-gray-500 text-sm mb-6">Conflictos entre vecinos, ruidos, límites y convivencia.</p>
-                <!-- PRECIO: actualiza este valor cuando lo definas -->
                 <p class="text-3xl font-extrabold text-primary mb-1">
                     <span id="precio-vecinal">$XX.000</span>
                 </p>
                 <p class="text-gray-400 text-xs mb-8">por sesión (online o presencial)</p>
-                <!-- BOTÓN MP: reemplaza href="#" y quita data-mp-disabled cuando esté listo -->
                 <a href="#" data-mp-disabled
                    class="btn-mp w-full justify-center"
                    aria-disabled="true"
@@ -683,19 +647,16 @@
                 </a>
             </article>
 
-            <!-- TARJETA 3: Mediación Comunitaria -->
             <article class="bg-white rounded-2xl shadow-md border border-light/30 p-8 flex flex-col items-center text-center reveal hover:shadow-xl transition-all" style="transition-delay:200ms">
                 <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-5" aria-hidden="true">
                     <i class="fas fa-hands-helping text-primary text-2xl"></i>
                 </div>
                 <h3 class="text-xl font-bold text-accent mb-2">Mediación Comunitaria</h3>
                 <p class="text-gray-500 text-sm mb-6">Organizaciones, juntas de vecinos y comunidades.</p>
-                <!-- PRECIO: actualiza este valor cuando lo definas -->
                 <p class="text-3xl font-extrabold text-primary mb-1">
                     <span id="precio-comunitaria">$XX.000</span>
                 </p>
                 <p class="text-gray-400 text-xs mb-8">por sesión (cotización según caso)</p>
-                <!-- BOTÓN MP: reemplaza href="#" y quita data-mp-disabled cuando esté listo -->
                 <a href="#" data-mp-disabled
                    class="btn-mp w-full justify-center"
                    aria-disabled="true"
@@ -706,7 +667,6 @@
 
         </div>
 
-        <!-- Aviso Mercado Pago (quitar cuando esté activo) -->
         <p class="text-center text-gray-400 text-sm mt-10 reveal">
             <i class="fas fa-info-circle" aria-hidden="true"></i>
             El pago online con Mercado Pago estará disponible próximamente. Por ahora contáctanos directamente.
@@ -716,9 +676,7 @@
 </section>
 
 
-<!-- ================================================================
-     CTA — CONTACTO PREVIO AL FOOTER
-================================================================ -->
+<!-- CTA -->
 <section class="py-24 bg-pattern-lines border-y border-light/30 relative overflow-hidden bg-background/50" aria-label="Llamada a la acción">
     <div class="max-w-5xl mx-auto px-4 text-center reveal w-full relative z-10">
         <h2 class="text-4xl font-bold text-accent mb-6">¿Necesitas demandar? Primero obtén tu acta.</h2>
@@ -744,9 +702,7 @@
 </section>
 
 
-<!-- ================================================================
-     FAQ — PREGUNTAS FRECUENTES (Schema.org FAQPage ya declarado arriba)
-================================================================ -->
+<!-- FAQ -->
 <section id="faq" class="py-24 bg-white relative overflow-hidden" aria-labelledby="titulo-faq">
     <div class="max-w-3xl mx-auto px-4 w-full relative z-10">
 
@@ -812,9 +768,7 @@
 </section>
 
 
-<!-- ================================================================
-     FOOTER
-================================================================ -->
+<!-- FOOTER -->
 <footer id="contacto" class="bg-accent text-white flex flex-col justify-center py-20 relative overflow-hidden" role="contentinfo">
     <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-light via-primary to-background" aria-hidden="true"></div>
 
@@ -822,7 +776,8 @@
 
         <div class="flex flex-col items-start">
             <a href="#top" aria-label="Volver al inicio" class="mb-8 inline-block hover:opacity-80 transition-opacity bg-white p-4 rounded-xl">
-                <img src="./logo.png" alt="Logo Mediación Ya" class="h-16 w-auto object-contain" width="128" height="64">
+                <!-- Logo footer más grande -->
+                <img src="./logo.png" alt="Logo Mediación Ya" class="h-20 w-auto object-contain" width="200" height="80">
             </a>
             <p class="text-light mt-2 text-lg">
                 Especialistas en la gestión de conflictos y entrega de documentos legales necesarios para el sistema judicial chileno.
@@ -861,7 +816,6 @@
                 <i class="far fa-clock text-primary" aria-hidden="true"></i>
                 <time>Lunes a Viernes: 09:00 – 18:00 hrs</time>
             </p>
-            <!-- Links rápidos footer -->
             <nav aria-label="Mapa del sitio">
                 <ul class="space-y-2 text-light text-base">
                     <li><a href="#servicios"   class="hover:text-white transition">→ Servicios</a></li>
@@ -883,9 +837,7 @@
 </footer>
 
 
-<!-- ================================================================
-     BOTÓN FLOTANTE WHATSAPP
-================================================================ -->
+<!-- BOTÓN FLOTANTE WHATSAPP -->
 <a href="https://wa.me/56961230824" target="_blank" rel="noopener"
    aria-label="Contactar por WhatsApp"
    class="fixed bottom-8 right-8 z-50 flex items-center group">
@@ -898,14 +850,10 @@
 </a>
 
 
-<!-- ================================================================
-     SCRIPTS
-================================================================ -->
+<!-- SCRIPTS -->
 <script>
-    // --- Año dinámico en el footer ---
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
-    // --- Menú hamburguesa ---
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
 
@@ -915,7 +863,6 @@
         hamburger.setAttribute('aria-expanded', isOpen);
     });
 
-    // Cierra el menú al hacer clic en cualquier link interno
     mobileMenu.querySelectorAll('a[href^="#"]').forEach(link => {
         link.addEventListener('click', () => {
             mobileMenu.classList.remove('open');
@@ -924,7 +871,6 @@
         });
     });
 
-    // --- Reveal on scroll ---
     document.addEventListener('DOMContentLoaded', () => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -935,7 +881,6 @@
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     });
 
-    // --- Previene navegación en botones MP desactivados ---
     document.querySelectorAll('[data-mp-disabled]').forEach(btn => {
         btn.addEventListener('click', (e) => e.preventDefault());
     });
